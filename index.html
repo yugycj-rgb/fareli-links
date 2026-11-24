@@ -1,111 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fiestas Fareli</title>
-
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fff7f2"><meta name="description" content="Fiestas Fareli: piñatas, fiestas y más. Contáctanos por WhatsApp y síguenos en nuestras redes."><title>Fiestas Fareli | Piñatas, fiestas y más</title>
+<link rel="icon" href="assets/logo-fareli.webp" type="image/webp">
 <style>
-
-body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#ff4da6,#ff6b6b,#ffd93d);
-    margin:0;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.container{
-    background:white;
-    width:90%;
-    max-width:420px;
-    border-radius:25px;
-    padding:30px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
-}
-
-.fareli-logo{display:block;width:160px;max-width:55%;height:auto;margin:0 auto 14px;}
-
-h1{
-    color:#ff2d75;
-    margin-bottom:10px;
-}
-
-p{
-    color:#555;
-}
-
-.btn{
-    display:block;
-    text-decoration:none;
-    color:white;
-    padding:15px;
-    margin:12px 0;
-    border-radius:15px;
-    font-size:18px;
-    font-weight:bold;
-}
-
-.instagram{
-    background:#E1306C;
-}
-
-.tiktok{
-    background:#111;
-}
-
-.facebook{background:#1877F2;}
-.whatsapp{background:#25D366; color:#082f1b;}
-.btn:focus-visible{outline:3px solid #151515;outline-offset:3px;}
-.btn:hover{filter:brightness(.96);transform:translateY(-1px);}
-
-.footer{
-    margin-top:20px;
-    font-size:14px;
-    color:#777;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-<img class="fareli-logo" src="data:image/webp;base64,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" alt="Logo original de Fiestas Fareli, canguro con globos" width="160" height="160">
-<h1>🎉 Fiestas Fareli 🎉</h1>
-
-<p>Síguenos en nuestras redes sociales</p>
-
-<a class="btn instagram"
-href="https://www.instagram.com/fiestasfareli/"
-target="_blank">
-📸 Instagram
-</a>
-
-<a class="btn tiktok"
-href="https://www.tiktok.com/@fiestasfareli"
-target="_blank">
-🎵 TikTok
-</a>
-
-<a class="btn facebook"
-href="https://www.facebook.com/Fiestasfareli/"
-target="_blank">
-👍 Facebook
-</a>
-
-<a class="btn whatsapp" href="https://wa.me/525528912344?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Fiestas%20Fareli" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Fiestas Fareli por WhatsApp al 55 2891 2344">💬 WhatsApp · 55 2891 2344</a>
-
-<div class="footer">
-Fiestas, Piñatas y Más ✨
-</div>
-
-</div>
-
-</body>
-</html>
+:root{--ink:#392735;--muted:#796c75;--border:#f0e5eb}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:34px 14px;display:grid;place-items:center;color:var(--ink);background:radial-gradient(circle at 9% 4%,#ffe7ae 0,transparent 30%),radial-gradient(circle at 92% 92%,#ffd9ec 0,transparent 33%),linear-gradient(145deg,#fff9ee,#fff6fa);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+main{width:min(100%,430px);padding:29px 27px 25px;text-align:center;background:white;border:1px solid #ffe9ef;border-radius:28px;box-shadow:0 22px 70px #8655671a}
+.logo{display:block;width:166px;height:166px;object-fit:contain;margin:0 auto 12px}h1{font-size:33px;letter-spacing:-1px;line-height:1.1;margin:0;font-weight:800}.bar{height:4px;width:45px;background:linear-gradient(90deg,#ffd20b,#f45289);border-radius:10px;margin:16px auto}.tagline{font-size:16px;font-weight:650;margin:0}.intro{margin:7px 0 23px;font-size:14px;line-height:1.5;color:var(--muted)}
+a{text-decoration:none}.wa{background:#137859;color:white;display:flex;align-items:center;gap:13px;text-align:left;padding:14px 15px;border-radius:16px;transition:.15s;box-shadow:0 8px 20px #16775130}.wa:hover{background:#0f664b;transform:translateY(-1px)}.waicon{display:grid;place-items:center;width:42px;height:42px;flex:none;border-radius:12px;background:#ffffff20}.waicon svg{width:22px;height:22px}.watitle{display:block;font-size:16px;font-weight:750}.wanumber{display:block;margin-top:3px;font-size:12px;color:#d4f6e8}.arrow{margin-left:auto;font-size:24px;font-weight:300}
+.section{display:flex;align-items:center;gap:10px;margin:26px 0 13px;text-transform:uppercase;letter-spacing:1.2px;font-size:11px;font-weight:700;color:#8d7c84}.section:before,.section:after{content:"";height:1px;flex:1;background:var(--border)}
+nav{display:grid;gap:10px}.social{display:flex;align-items:center;gap:13px;border:1px solid var(--border);border-radius:15px;padding:12px 14px;text-align:left;font-size:15px;font-weight:650;color:var(--ink)}.social:hover{background:#fff8fa;border-color:#f5c6d7}.symbol{display:grid;place-items:center;width:33px;height:33px;border-radius:10px;background:#fff0f6;color:#df3e7a;font-size:16px}.symbol.tk{background:#f5f5f6;color:#222}.symbol.fb{background:#edf3ff;color:#226be6}.social .arrow{color:#b5a5ae;font-size:20px}
+footer{font-size:12px;color:#aa97a1;margin-top:23px}a:focus-visible{outline:3px solid #f4af37;outline-offset:3px}
+@media(max-width:430px){body{padding:15px 12px 25px;place-items:start center}main{padding:26px 21px 24px;border-radius:25px}.logo{width:153px;height:153px}h1{font-size:30px}}
+</style></head><body><main>
+<img class="logo" src="assets/logo-fareli.webp" width="166" height="166" alt="Logotipo original de Fiestas Fareli: canguro con globos">
+<h1>Fiestas Fareli</h1><div class="bar"></div><p class="tagline">Piñatas, fiestas y más</p><p class="intro">Todo comienza con una gran celebración.</p>
+<a class="wa" href="https://wa.me/525528912344?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Fiestas%20Fareli" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp al 55 2891 2344"><span class="waicon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.9 8.5c.4 2.7 3.4 5.8 6.4 6.5l1.1-1.5-2.3-1.3-1 1c-1.2-.6-2-1.5-2.6-2.6l1-1.1-1.5-2Z"/></svg></span><span><span class="watitle">Escríbenos por WhatsApp</span><span class="wanumber">55 2891 2344</span></span><span class="arrow" aria-hidden="true">›</span></a>
+<div class="section">Síguenos en redes</div><nav aria-label="Redes de Fiestas Fareli">
+<a class="social" href="https://www.instagram.com/fiestasfareli/" target="_blank" rel="noopener noreferrer"><span class="symbol">◎</span>Instagram<span class="arrow" aria-hidden="true">›</span></a>
+<a class="social" href="https://www.tiktok.com/@fiestasfareli" target="_blank" rel="noopener noreferrer"><span class="symbol tk">♪</span>TikTok<span class="arrow" aria-hidden="true">›</span></a>
+<a class="social" href="https://www.facebook.com/Fiestasfareli/" target="_blank" rel="noopener noreferrer"><span class="symbol fb">f</span>Facebook<span class="arrow" aria-hidden="true">›</span></a>
+</nav><footer>Fiestas llenas de alegría ✦ Fareli</footer></main></body></html>
