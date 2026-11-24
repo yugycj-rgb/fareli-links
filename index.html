@@ -1,59 +1,72 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fff6ed"><meta name="description" content="Fiestas Fareli: piñatas, fiestas y más. Contáctanos por WhatsApp y síguenos en nuestras redes."><title>Fiestas Fareli | Piñatas, fiestas y más</title>
-<link rel="icon" href="assets/logo-fareli.webp" type="image/webp">
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffe59b">
+<meta name="description" content="Fiestas Fareli: piñatas, fiestas y más. Contáctanos por WhatsApp y síguenos en redes.">
+<title>Fiestas Fareli | Piñatas, fiestas y más</title>
+<link rel="icon" type="image/webp" href="assets/logo-fareli.webp">
 <style>
-:root{--ink:#392735;--muted:#796c75;--border:#f0e5eb}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:34px 14px;display:grid;place-items:center;color:var(--ink);background:radial-gradient(circle at 9% 4%,#ffe7ae 0,transparent 30%),radial-gradient(circle at 92% 92%,#ffd9ec 0,transparent 33%),linear-gradient(145deg,#fff9ee,#fff6fa);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-main{width:min(100%,430px);padding:29px 27px 25px;text-align:center;background:white;border:1px solid #ffe9ef;border-radius:28px;box-shadow:0 22px 70px #8655671a}
-.logo{display:block;width:166px;height:166px;object-fit:contain;margin:0 auto 12px}h1{font-size:33px;letter-spacing:-1px;line-height:1.1;margin:0;font-weight:800}.bar{height:4px;width:45px;background:linear-gradient(90deg,#ffd20b,#f45289);border-radius:10px;margin:16px auto}.tagline{font-size:16px;font-weight:650;margin:0}.intro{margin:7px 0 23px;font-size:14px;line-height:1.5;color:var(--muted)}
-a{text-decoration:none}.wa{background:#137859;color:white;display:flex;align-items:center;gap:13px;text-align:left;padding:14px 15px;border-radius:16px;transition:.15s;box-shadow:0 8px 20px #16775130}.wa:hover{background:#0f664b;transform:translateY(-1px)}.waicon{display:grid;place-items:center;width:42px;height:42px;flex:none;border-radius:12px;background:#ffffff20}.waicon svg{width:22px;height:22px}.watitle{display:block;font-size:16px;font-weight:750}.wanumber{display:block;margin-top:3px;font-size:12px;color:#d4f6e8}.arrow{margin-left:auto;font-size:24px;font-weight:300}
-.section{display:flex;align-items:center;gap:10px;margin:26px 0 13px;text-transform:uppercase;letter-spacing:1.2px;font-size:11px;font-weight:700;color:#8d7c84}.section:before,.section:after{content:"";height:1px;flex:1;background:var(--border)}
-nav{display:grid;gap:10px}.social{display:flex;align-items:center;gap:13px;border:1px solid var(--border);border-radius:15px;padding:12px 14px;text-align:left;font-size:15px;font-weight:650;color:var(--ink)}.social:hover{background:#fff8fa;border-color:#f5c6d7}.symbol{display:grid;place-items:center;width:33px;height:33px;border-radius:10px;background:#fff0f6;color:#df3e7a;font-size:16px}.symbol.tk{background:#f5f5f6;color:#222}.symbol.fb{background:#edf3ff;color:#226be6}.social .arrow{color:#b5a5ae;font-size:20px}
-footer{font-size:12px;color:#aa97a1;margin-top:23px}a:focus-visible{outline:3px solid #f4af37;outline-offset:3px}
-@media(max-width:430px){body{padding:15px 12px 25px;place-items:start center}main{padding:26px 21px 24px;border-radius:25px}.logo{width:153px;height:153px}h1{font-size:30px}}
-
-/* Acentos festivos Fareli. Se mantienen el logo y los contactos originales. */
-:root{--border:#f3dfe8}
-body{
-  position:relative;isolation:isolate;
-  background:
-    radial-gradient(circle at 8% 7%,rgba(255,213,54,.70) 0%,transparent 30%),
-    radial-gradient(circle at 93% 15%,rgba(255,143,184,.39) 0%,transparent 28%),
-    radial-gradient(circle at 8% 90%,rgba(119,228,222,.37) 0%,transparent 32%),
-    radial-gradient(circle at 95% 92%,rgba(181,159,247,.44) 0%,transparent 32%),
-    linear-gradient(155deg,#fff8e5 0%,#fff5f9 55%,#f4f5ff 100%);
-}
-body::before{
-  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.68;
-  background:
-    radial-gradient(circle at 9% 21%,#fc81ab 0 4px,transparent 5px),
-    radial-gradient(circle at 88% 31%,#f8c929 0 5px,transparent 6px),
-    radial-gradient(circle at 21% 77%,#9c7cef 0 3px,transparent 4px),
-    radial-gradient(circle at 75% 82%,#53cabb 0 4px,transparent 5px),
-    radial-gradient(circle at 15% 51%,#f59b53 0 2px,transparent 3px),
-    radial-gradient(circle at 91% 69%,#df6aa5 0 3px,transparent 4px);
-}
-main{position:relative;z-index:1;overflow:hidden;border-color:#ffe1ec;box-shadow:0 23px 80px rgba(109,48,100,.15),0 7px 24px rgba(109,48,100,.04)}
-main::before{content:"";position:absolute;left:0;top:0;right:0;height:7px;background:linear-gradient(90deg,#ffd633 0%,#ff9770 24%,#f25b9c 50%,#a990ed 73%,#60d4c9 100%)}
-.logo{filter:drop-shadow(0 7px 12px rgba(255,198,32,.15))}
-h1{color:#4c2b43}
-.bar{width:60px;height:5px;background:linear-gradient(90deg,#ffd52d,#ff8d56,#f2539b,#a584e9);box-shadow:0 2px 8px rgba(246,94,146,.13)}
-.tagline{color:#a83d79}
-.section{color:#946183}
-nav .social:nth-child(1){background:linear-gradient(110deg,#fff1f7,#fff 82%);border-color:#f8dce8}
-nav .social:nth-child(2){background:linear-gradient(110deg,#f6f1ff,#fff 82%);border-color:#e9e1fa}
-nav .social:nth-child(3){background:linear-gradient(110deg,#edf7ff,#fff 82%);border-color:#dceafb}
-nav .social:hover{filter:brightness(.985)}
-.symbol svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-footer{color:#997687}
-@media(max-width:430px){body::before{opacity:.46}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
-
-</style></head><body><main>
-<img class="logo" src="assets/logo-fareli.webp" width="166" height="166" alt="Logotipo original de Fiestas Fareli: canguro con globos">
-<h1>Fiestas Fareli</h1><div class="bar"></div><p class="tagline">Piñatas, fiestas y más</p><p class="intro">Todo comienza con una gran celebración.</p>
-<a class="wa" href="https://wa.me/525528912344?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Fiestas%20Fareli" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp al 55 2891 2344"><span class="waicon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.9 8.5c.4 2.7 3.4 5.8 6.4 6.5l1.1-1.5-2.3-1.3-1 1c-1.2-.6-2-1.5-2.6-2.6l1-1.1-1.5-2Z"/></svg></span><span><span class="watitle">Escríbenos por WhatsApp</span><span class="wanumber">55 2891 2344</span></span><span class="arrow" aria-hidden="true">›</span></a>
-<div class="section">Síguenos en redes</div><nav aria-label="Redes de Fiestas Fareli">
-<a class="social" href="https://www.instagram.com/fiestasfareli/" target="_blank" rel="noopener noreferrer"><span class="symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.6 6.4h.01"/></svg></span>Instagram<span class="arrow" aria-hidden="true">›</span></a>
-<a class="social" href="https://www.tiktok.com/@fiestasfareli" target="_blank" rel="noopener noreferrer"><span class="symbol tk" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.5 3v12.7a4 4 0 1 1-4-4c.4 0 .8.1 1.2.2"/><path d="M12.5 3c1 3.2 3 4.7 6 4.8"/></svg></span>TikTok<span class="arrow" aria-hidden="true">›</span></a>
-<a class="social" href="https://www.facebook.com/Fiestasfareli/" target="_blank" rel="noopener noreferrer"><span class="symbol fb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 21v-8h3l.5-4H15V7c0-1 .4-1.5 1.7-1.5H19V2h-3c-3.3 0-5 1.8-5 5v2H8v4h3v8"/></svg></span>Facebook<span class="arrow" aria-hidden="true">›</span></a>
-</nav><footer>Fiestas llenas de alegría ✦ Fareli</footer></main></body></html>
+:root{color-scheme:light;--ink:#442b43;--muted:#746573;--rose:#f24891;--green:#147c5b}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;padding:26px 14px 36px;display:grid;place-items:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:
+radial-gradient(ellipse at 4% 7%,rgba(255,213,55,.63),transparent 35%),
+radial-gradient(ellipse at 96% 16%,rgba(254,123,180,.35),transparent 37%),
+radial-gradient(ellipse at 10% 93%,rgba(82,214,210,.36),transparent 36%),
+radial-gradient(ellipse at 94% 95%,rgba(155,122,244,.37),transparent 42%),#fffaf3}
+.card{width:min(100%,430px);background:#fff;border-radius:30px;overflow:hidden;border:1px solid #ffeaef;box-shadow:0 26px 75px rgba(88,48,78,.16);text-align:center}
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:34px 24px 27px;background:linear-gradient(127deg,#ffe277 0%,#ffb6ca 51%,#b8edf3 100%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.72;background:
+radial-gradient(circle at 9% 12%,#f9478b 0 5px,transparent 6px),
+radial-gradient(circle at 85% 13%,#7150c3 0 4px,transparent 5px),
+radial-gradient(circle at 16% 75%,#13baba 0 4px,transparent 5px),
+radial-gradient(circle at 89% 79%,#f1a322 0 5px,transparent 6px),
+linear-gradient(30deg,transparent 48%,#ff5b8d 49% 51%,transparent 52%) 33px 24px/14px 12px no-repeat,
+linear-gradient(25deg,transparent 46%,#8f53d4 47% 53%,transparent 54%) 88% 42%/20px 16px no-repeat,
+linear-gradient(130deg,transparent 44%,#0eb9b3 45% 55%,transparent 56%) 10% 41%/15px 20px no-repeat,
+linear-gradient(140deg,transparent 42%,#f77d3b 43% 55%,transparent 56%) 92% 64%/13px 17px no-repeat}
+.logo{display:block;width:174px;height:174px;border-radius:50%;object-fit:cover;margin:0 auto 14px;border:5px solid rgba(255,255,255,.9);box-shadow:0 8px 25px rgba(105,43,71,.15)}
+h1{margin:0;font-size:34px;line-height:1.08;letter-spacing:-1.3px;font-weight:850;color:#4c2444;text-shadow:0 1px 0 #ffffff55}
+.sparkline{display:flex;justify-content:center;gap:6px;margin:16px auto}
+.sparkline i{display:block;height:5px;width:21px;border-radius:8px;background:#ffcf36}.sparkline i:nth-child(2){background:#f34e95}.sparkline i:nth-child(3){background:#7e66d5}.sparkline i:nth-child(4){background:#19b8bb}
+.tagline{display:inline-block;margin:0;padding:8px 17px;border:1px solid rgba(255,255,255,.8);border-radius:999px;background:rgba(255,255,255,.74);color:#763b66;font-size:15px;font-weight:750}
+.intro{font-size:13px;line-height:1.5;margin:12px 0 0;color:#664b62;font-weight:550}
+.content{padding:23px 25px 25px;background:linear-gradient(#fff 0%,#fff 72%,#fffafd 100%)}
+a{text-decoration:none}
+.wa{display:flex;align-items:center;text-align:left;gap:12px;width:100%;padding:14px 15px;border-radius:16px;background:var(--green);color:white;box-shadow:0 8px 19px rgba(15,112,86,.18);transition:transform .15s,background .15s}
+.wa:hover{background:#0e694d;transform:translateY(-1px)}.waicon{height:41px;width:41px;flex:0 0 41px;border-radius:12px;background:#ffffff20;display:grid;place-items:center}.waicon svg{height:23px;width:23px}.watitle{display:block;font-size:15px;font-weight:750;line-height:1.2}.wanumber{display:block;color:#d9f6e9;font-size:12px;margin-top:4px}.arrow{margin-left:auto;font-size:22px;line-height:1;color:inherit;opacity:.6}
+.section{display:flex;align-items:center;gap:10px;margin:25px 0 13px;text-transform:uppercase;letter-spacing:1.2px;font-size:11px;font-weight:800;color:#a3547d}.section:before,.section:after{content:"";height:1px;flex:1;background:#f3d6e5}
+nav{display:grid;gap:10px}.social{min-height:60px;display:flex;align-items:center;gap:12px;padding:12px 14px;border:1.5px solid transparent;border-radius:16px;text-align:left;color:#4a3045;font-size:15px;font-weight:720;transition:transform .15s,filter .15s}.social:hover{transform:translateY(-1px);filter:saturate(1.2)}
+.social.instagram{background:#ffe8f3;border-color:#ffc4dd}.social.tiktok{background:#efeaff;border-color:#daccff}.social.facebook{background:#e5f1ff;border-color:#c4e0ff}
+.symbol{height:34px;width:34px;display:grid;place-items:center;flex:0 0 34px;border-radius:10px;background:#fff;color:#dc3f84}.symbol.tk{color:#2d2631}.symbol.fb{color:#1764d4}.symbol svg{height:20px;width:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+footer{margin-top:22px;font-size:12px;color:#9b7a91}.footer-spark{font-size:14px;color:#e85c9a;margin:0 4px}
+a:focus-visible{outline:3px solid #843ede;outline-offset:3px}
+@media(max-width:440px){body{padding:16px 12px 25px;place-items:start center}.card{border-radius:26px}.hero{padding:29px 19px 25px}.logo{width:164px;height:164px}h1{font-size:31px}.content{padding:21px 20px 23px}.wa{gap:11px}.watitle{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.wa,.social{transition:none}}
+</style>
+</head><body>
+<main class="card">
+  <header class="hero">
+    <img class="logo" src="assets/logo-fareli.webp" width="174" height="174" alt="Logo original de Fiestas Fareli: canguro con globos">
+    <h1>Fiestas Fareli</h1>
+    <div class="sparkline" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <p class="tagline">Piñatas, fiestas y más</p>
+    <p class="intro">Todo comienza con una gran celebración.</p>
+  </header>
+  <section class="content" aria-label="Contacto y redes">
+    <a class="wa" href="https://wa.me/525528912344?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Fiestas%20Fareli" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp al 55 2891 2344">
+      <span class="waicon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.9 8.5c.4 2.7 3.4 5.8 6.4 6.5l1.1-1.5-2.3-1.3-1 1c-1.2-.6-2-1.5-2.6-2.6l1-1.1-1.5-2Z"/></svg></span>
+      <span><span class="watitle">Escríbenos por WhatsApp</span><span class="wanumber">55 2891 2344</span></span><span class="arrow" aria-hidden="true">›</span>
+    </a>
+    <div class="section">Síguenos en redes</div>
+    <nav aria-label="Redes sociales de Fiestas Fareli">
+      <a class="social instagram" href="https://www.instagram.com/fiestasfareli/" target="_blank" rel="noopener noreferrer"><span class="symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.6 6.4h.01"/></svg></span>Instagram<span class="arrow" aria-hidden="true">›</span></a>
+      <a class="social tiktok" href="https://www.tiktok.com/@fiestasfareli" target="_blank" rel="noopener noreferrer"><span class="symbol tk" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12.5 3v12.7a4 4 0 1 1-4-4c.4 0 .8.1 1.2.2"/><path d="M12.5 3c1 3.2 3 4.7 6 4.8"/></svg></span>TikTok<span class="arrow" aria-hidden="true">›</span></a>
+      <a class="social facebook" href="https://www.facebook.com/Fiestasfareli/" target="_blank" rel="noopener noreferrer"><span class="symbol fb" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 21v-8h3l.5-4H15V7c0-1 .4-1.5 1.7-1.5H19V2h-3c-3.3 0-5 1.8-5 5v2H8v4h3v8"/></svg></span>Facebook<span class="arrow" aria-hidden="true">›</span></a>
+    </nav>
+    <footer>Fiestas llenas de alegría <span class="footer-spark">✦</span> Fareli</footer>
+  </section>
+</main>
+</body></html>
